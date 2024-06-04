@@ -17,6 +17,10 @@
     align-items: center;
 }
 
+.reason-head{
+    width: 100%;
+}
+
 .prev, .next{
     height: 3rem;
     width: 5%;
@@ -33,10 +37,44 @@
     width:100%;
 }
 
+.reason-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.reason-div p {
+    width:100%;
+    margin: 0.5rem;
+}
+
+.dash{
+    height: 6px;
+    width:17px;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+}
+
+ .explore-btn {
+     height: 3rem;
+     width: 3rem;
+     margin-right: 1rem;
+     border-radius: 20px;
+     border: none;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-blend-mode: multiply;
+     background-image: url("../../assets/logo-black.png");
+ }
+
 @media screen and (min-width:700px) and (max-width:1000px){
     .image{
         width:60%;
         height:25rem;
+    }
+
+    .reason-head{
+        width: 80%;
     }
 }
 
@@ -56,5 +94,11 @@
     .image{
         height: 25rem;
         width:40%;
+    }
+
+    .reason-head {
+        width: 60%;
+        padding-left: 2rem;
+        box-sizing: border-box;
     }
 }

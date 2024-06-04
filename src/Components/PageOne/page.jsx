@@ -45,7 +45,7 @@ const categoryTags = [
   },
 ];
 
-export default function Page(props) {
+export default function Page() {
   return (
     <Container width="100%" flex="column">
       <div

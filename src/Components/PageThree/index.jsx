@@ -26,7 +26,7 @@ const steps = [
   },
 ];
 
-export default function PageThree(props) {
+export default function PageThree() {
   const [isExpanded, setIsExpanded] = useState("");
 
   // const expandDivHandler = (div) => {

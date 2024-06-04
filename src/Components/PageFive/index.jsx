@@ -4,6 +4,7 @@ import classes from "./index.module.css";
 import ImageOne from "../../assets/one.png";
 import ImageTwo from "../../assets/two.png";
 import ImageThree from "../../assets/three.png";
+import { PTags } from "../Text/index.jsx";
 
 const reasons = [
   {
@@ -14,6 +15,7 @@ const reasons = [
       "Risk-free resource swapping for the best fit.",
     ],
     image: ImageOne,
+    color: "#50589F",
   },
   {
     head: "An Open Book",
@@ -23,6 +25,7 @@ const reasons = [
       "Review past ratings.",
     ],
     image: ImageTwo,
+    color: "#FFBE2E",
   },
   {
     head: "Stay In the Loop",
@@ -32,6 +35,7 @@ const reasons = [
       "Create projects to organize and assign tasks more effectively.it.",
     ],
     image: ImageThree,
+    color: "#C7F4C2",
   },
 ];
 
@@ -73,11 +77,23 @@ export default function PageFive() {
         <div className={classes.reason}>
           <div className={classes["reason-head"]}>
             <h1 className="bold-header">{reasons[currentPage].head}</h1>
-            <ul>
-              {reasons[currentPage].reason.map((r, i) => (
-                <li key={`${i}reason`}>{r}</li>
-              ))}
-            </ul>
+
+            {reasons[currentPage].reason.map((r, i) => (
+              <div key={`${i}reason`} className={classes["reason-div"]}>
+                <span
+                  style={{ backgroundColor: reasons[currentPage].color }}
+                  className={classes.dash}
+                ></span>
+                <p>{r}</p>
+              </div>
+            ))}
+
+            <Container width="100%" align="center" margin="1rem 0 0 0">
+              <button className={classes["explore-btn"]}></button>
+              <PTags fontSize="18px">
+                <b>Learn more</b>
+              </PTags>
+            </Container>
           </div>
           <img
             src={reasons[currentPage].image}

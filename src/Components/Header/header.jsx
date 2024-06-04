@@ -27,7 +27,7 @@ const itCategory = [
   "Front End Developer",
 ];
 
-export default function Header(props) {
+export default function Header() {
   const [sidebar, showSideBar] = useState(false);
 
   const showSideBarHandler = () => showSideBar(true);
@@ -86,7 +86,7 @@ export default function Header(props) {
               className={classes["category-btn"]}
               style={{ transform: "scale(1.1)", backgroundColor: "#C8EFC4" }}
             >
-              IT&#38;Development
+              IT &#38; Development
             </button>
             <button className={classes["category-btn"]}>
               Design and creative

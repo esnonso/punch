@@ -3,7 +3,7 @@ import classes from "./index.module.css";
 import Head from "../../assets/head-two.png";
 import { PTags } from "../Text/index.jsx";
 
-export default function PageTwo(props) {
+export default function PageTwo() {
   const grayStyle = {
     color: "#797A7F",
   };

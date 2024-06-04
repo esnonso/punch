@@ -26,10 +26,10 @@ export default function SectionThree() {
             </b>
           </PTags>
         </div>
-        <PTags margin="2rem 0 0 0.8rem" fontSize="20px">
+        <PTags margin="1.5rem 0 0 0.8rem" fontSize="18px">
           <b>Ruby Developer</b>
         </PTags>
-        <PTags margin="0.2rem 0 0 0.8rem">
+        <PTags margin="0.2rem 0 0 0.8rem" fontSize="14px">
           Redwood city california, 7 years experience
         </PTags>
         <PTags margin="1rem 0 0 0.8rem" fontSize="20px">

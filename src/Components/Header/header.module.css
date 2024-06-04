@@ -161,6 +161,7 @@ input {
 .category-btn{
     padding: 0.5rem;
     font:inherit;
+    font-size: small;
     border-radius: 10px;
     background-color: #f2f2f2;
     border: none;
