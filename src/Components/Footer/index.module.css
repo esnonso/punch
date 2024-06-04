@@ -45,6 +45,7 @@ footer{
     width:7rem;
     height: 3rem;
     font:inherit;
+    font-size: small;
     border-radius: 15px;
     border:none;
     background-color: #292B34;

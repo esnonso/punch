@@ -28,6 +28,11 @@ body {
   line-height: 1.5;   
 }
 
+.bold-header-one img{
+  height: 24px;
+  width:24px;
+}
+
 .bold-header-one {
   font-size: 25px;
   font-weight: 700;
