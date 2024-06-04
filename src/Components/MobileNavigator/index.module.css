@@ -1,0 +1,71 @@
+.backdrop {
+    background-color: black;
+    z-index: 3;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.8;
+    color: white;
+    animation-name: examplesb;
+    animation-duration: 1s;
+}
+
+.sidebar {
+    background-color: white;
+    z-index: 4;
+    height: 100vh;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    left:20%;
+    color: white;
+    animation-name: examples;
+    animation-duration: 2s;
+}
+
+.sidebar a{
+    text-decoration: none;
+    height: 4rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px #525AA0 solid;
+    color: #525AA0;
+}
+
+.sidebar div:nth-child(2){
+    border-top:1px #525AA0 solid;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+@keyframes examples {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes examples-b {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+@media screen and (min-width:800px){
+    .sidebar{
+        width:60%;
+        left: 40%;
+    }
+}

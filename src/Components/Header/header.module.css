@@ -1,0 +1,273 @@
+.header-container {
+    padding: 26px 6px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #525AA0;
+    width: 100%;
+    height: 4rem;
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.head{
+    height: 25px;
+    width:25px;
+}
+
+.links {
+    display: none;
+}
+
+header li {
+    margin-left: 0.5rem;
+}
+
+.logo {
+    margin-top:-0.3rem;
+    width: 112px;
+    height: 27.35px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-image: url("../../assets/logo.png");
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+
+.login-link {
+    list-style-type: none;
+    margin-right: 0.5rem;
+    display: none;
+}
+
+.join-us {
+    background-color: white;
+    color: #525AA0;
+    height: 75%;
+    width: 102px;
+    border: none;
+    border-radius: 18px;
+    display: none;
+}
+
+
+.banner-head {
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner p {
+    margin: 0;
+    font-size: medium;
+    padding: 0 1rem;
+}
+
+input {
+    width: 70%;
+    height: 50px;
+    padding: 0px 0px 0px 27px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1.5px #F0F0F0 solid;
+}
+
+.search-container {
+    width: 80%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.search-btn {
+    width: 20%;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    margin-left: -0.5rem;
+    font-size: 17px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-image: url("../../assets/btn-logo.png");
+}
+
+.triangle {
+    margin-left: -0.1rem;
+}
+
+.category-container {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.category p {
+    margin:0.5rem 0;
+    font-size: small;
+    width: 48%;
+    text-align: left;
+    box-sizing: border-box;
+    color: #A1A1A1;
+}
+
+.category-btn{
+    padding: 0.5rem;
+    font:inherit;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.hamburger{
+    width:25px;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width:600px) and (max-width:1131px) {
+    .banner-head {
+        width: 70%;
+        margin: 7rem auto 0 auto;
+    }
+
+    .banner p {
+        font-size: medium;
+        padding: 0 2rem;
+    }
+
+    .search-container {
+        width: 65%;
+        display: flex;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    .search-btn {
+        width: 15%;
+    }
+
+    .category-container {
+        width: 80%;
+    }
+
+    .category p {
+        font-size: medium;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .category-btn{
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media screen and (min-width:1132px) {
+    .header-container {
+        padding: 26px 36px;
+    }
+
+    .links {
+        list-style-type: none;
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+
+    .banner-head {
+        width: 50%;
+        margin: 7rem auto 0 auto;
+    }
+
+    .banner p {
+        padding: 0;
+        width: 582px;
+        margin: 1rem auto;
+    }
+
+    .search-container {
+        width: 60%;
+        display: flex;
+    }
+
+    input {
+        width: 87%;
+        font: inherit;
+    }
+
+    .search-btn {
+        width: 13%;
+    }
+
+    .category-container {
+        width: 70%
+    }
+
+    .category p {
+        width: 30%;
+        font-size: medium;
+    }
+
+    .category-btn{
+        padding: 0.5rem 2rem;
+    }
+
+    .login-link, .join-us{
+        display: block;
+    }
+
+    .hamburger{
+        display:none;
+    }
+}

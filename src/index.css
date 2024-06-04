@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #202229;
+}
+
+.container{
+  width:100%;
+}
+
+.bold-header{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.5;   
+}
+
+.bold-header-one {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.5;
+  display: inline;
+  align-items: center;
+}
+
+
+@media screen and (min-width:600px) and (max-width:1131px) {
+  .bold-header, .bold-header-one{
+    font-size: 40px;
+  }
+
+  .bold-header-one img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media screen and (min-width:1132px) {
+  .bold-header, .bold-header-one{
+      font-size: 40px;
+    }
+
+    .bold-header-one img{
+      height: 35px;
+      width:35px;
+    }
+}
