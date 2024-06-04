@@ -12,25 +12,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   margin: 0;
   padding: 0;
   color: #202229;
 }
 
-.container{
-  width:100%;
+.container {
+  width: 100%;
 }
 
-.bold-header{
+.bold-header {
   font-size: 25px;
   font-weight: 700;
-  line-height: 1.5;   
+  line-height: 1.5;
 }
 
-.bold-header-one img{
+.bold-header-one img {
   height: 24px;
-  width:24px;
+  width: 24px;
 }
 
 .bold-header-one {
@@ -38,12 +45,16 @@ body {
   font-weight: 700;
   line-height: 1.5;
   display: inline;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 
 @media screen and (min-width:600px) and (max-width:1131px) {
-  .bold-header, .bold-header-one{
+
+  .bold-header,
+  .bold-header-one {
     font-size: 40px;
   }
 
@@ -54,12 +65,14 @@ body {
 }
 
 @media screen and (min-width:1132px) {
-  .bold-header, .bold-header-one{
-      font-size: 40px;
-    }
 
-    .bold-header-one img{
-      height: 35px;
-      width:35px;
-    }
+  .bold-header,
+  .bold-header-one {
+    font-size: 40px;
+  }
+
+  .bold-header-one img {
+    height: 35px;
+    width: 35px;
+  }
 }

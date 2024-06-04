@@ -1,57 +1,77 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .container {
-    width:100%;
+    width: 100%;
     padding: 2rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.step{
-    border:1px #F0F0F0 solid;
+.step {
+    border: 1px #F0F0F0 solid;
     margin-bottom: 0.3rem;
     font-size: 14px;
     padding: 1rem;
     border-radius: 5px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.step:hover{
+.step:hover {
     cursor: pointer;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.step-head{
+.step-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 3rem;
 }
 
-.step-img{
+.step-img {
     height: 100%;
-    width:3rem;
+    width: 3rem;
     border-radius: 50%;
-    display:flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: #F0F0F0;
     margin-right: 0.5rem;
 }
 
-.step-img img{
-    height:15px;
+.step-img img {
+    height: 15px;
     width: 15px;
 }
 
-.step p{
-    margin:0;
+.step p {
+    margin: 0;
 }
 
 @media screen and (min-width:700px) and (max-width:1131px) {
-    .container{
-        width:70%;
+    .container {
+        width: 70%;
     }
 }
 
 @media screen and (min-width:1132px) {
-    .container{
-        width:40%
+    .container {
+        width: 40%
     }
 }

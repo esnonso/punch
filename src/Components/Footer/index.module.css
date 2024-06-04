@@ -1,14 +1,22 @@
-footer{
-    width:100%;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+footer {
+    width: 100%;
     background-color: black;
     margin-top: -3rem;
     padding: 5rem 2rem 2rem 2rem;
     z-index: -1;
-    color:white;
+    color: white;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.foot-btn{
+.foot-btn {
     height: 2.5rem;
     width: 2.5rem;
     margin-right: 0.8rem;
@@ -20,134 +28,165 @@ footer{
     background-image: url("../../assets/pin-down.png");
 }
 
-.footer-main{
+.footer-main {
     margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
-.footer-one small{
+.footer-one small {
     color: #D1D1D2;
 }
 
-.links{
-    margin:4rem 0 1rem 0;
-    color:#5F5F62
+.links {
+    margin: 4rem 0 1rem 0;
+    color: #5F5F62
 }
 
-.link-btn-container{
-    width:100%;
+.link-btn-container {
+    width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 2rem;
 }
-.link-btn{
-    margin-right:0.5rem;
-    width:7rem;
+
+.link-btn {
+    margin-right: 0.5rem;
+    width: 7rem;
     height: 3rem;
-    font:inherit;
+    font: inherit;
     font-size: small;
     border-radius: 15px;
-    border:none;
+    border: none;
     background-color: #292B34;
     color: #d4d6e5;
 }
 
-.bold-tag{
+.bold-tag {
     font-size: 20px;
     margin: 0;
 }
 
-.footer-one{
-    width:80%;
+.footer-one {
+    width: 80%;
 }
 
-.footer-two{
-    width:100%;
+.footer-two {
+    width: 100%;
 }
 
 .link-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width:100%;
+    width: 100%;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-.class-links{
+.class-links {
     list-style-type: none;
     padding: 0;
     width: 50%;
 }
 
-.links-head{
+.links-head {
     color: #292B34;
 }
 
-.link-links{
+.link-links {
     color: #C6C6C7;
 }
 
-.footer-bottom{
+.footer-bottom {
     border-top: 1px #292B34 solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #C6C6C7;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
-.footer-bottom a{
+.footer-bottom a {
     margin-right: 1rem;
     color: #292B34;
 }
 
 @media screen and (min-width:600px) and (max-width:1000px) {
-    .footer-one p{
+    .footer-one p {
         width: 40%;
     }
 
-    .link-cont{
+    .link-cont {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 
-    .class-links{
-        width:25%;
+    .class-links {
+        width: 25%;
     }
 
 }
 
 @media screen and (min-width:1001px) {
-    .footer-one{
-        width:30%;
+    .footer-one {
+        width: 30%;
     }
 
     .footer-one p {
-       width:70%;
+        width: 70%;
     }
 
-    .footer-two{
+    .footer-two {
         width: 60%;
     }
 
-    .footer-main{
+    .footer-main {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
-    .bold-tag{
+    .bold-tag {
         font-size: 30px;
     }
-    
-    .link-btn{
+
+    .link-btn {
         width: 8rem;
     }
 
-    .class-links{
+    .class-links {
         width: 25%;
     }
 
-    .link-cont{
+    .link-cont {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 
-    .footer-bottom{
+    .footer-bottom {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 }

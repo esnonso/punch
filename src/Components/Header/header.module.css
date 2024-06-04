@@ -1,9 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .header-container {
     padding: 26px 6px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -13,16 +28,23 @@
     height: 4rem;
     border-radius: 18px;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 1rem 0 0.5rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.head{
+.head {
     height: 25px;
-    width:25px;
+    width: 25px;
 }
 
 .links {
@@ -34,7 +56,7 @@ header li {
 }
 
 .logo {
-    margin-top:-0.3rem;
+    margin-top: -0.3rem;
     width: 112px;
     height: 27.35px;
     background-size: 100%;
@@ -70,13 +92,21 @@ header a {
     width: 100%;
     margin-top: 5rem;
     text-align: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .banner {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -98,8 +128,13 @@ input {
 .search-container {
     width: 80%;
     margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -131,47 +166,60 @@ input {
 
 .category-container {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #F8F8F8;
     text-align: center;
     border-radius: 15px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .category {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style-type: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .category p {
-    margin:0.5rem 0;
+    margin: 0.5rem 0;
     font-size: small;
     width: 48%;
     text-align: left;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #A1A1A1;
 }
 
-.category-btn{
+.category-btn {
     padding: 0.5rem;
-    font:inherit;
+    font: inherit;
     font-size: small;
     border-radius: 10px;
     background-color: #f2f2f2;
     border: none;
 }
 
-.hamburger{
-    width:25px;
+.hamburger {
+    width: 25px;
 }
 
-.hamburger:hover{
+.hamburger:hover {
     cursor: pointer;
 }
 
@@ -188,6 +236,8 @@ input {
 
     .search-container {
         width: 65%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -209,7 +259,7 @@ input {
         text-align: center;
     }
 
-    .category-btn{
+    .category-btn {
         padding: 0.5rem 2rem;
     }
 }
@@ -221,8 +271,11 @@ input {
 
     .links {
         list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 40%;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
@@ -239,6 +292,8 @@ input {
 
     .search-container {
         width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -260,15 +315,16 @@ input {
         font-size: medium;
     }
 
-    .category-btn{
+    .category-btn {
         padding: 0.5rem 2rem;
     }
 
-    .login-link, .join-us{
+    .login-link,
+    .join-us {
         display: block;
     }
 
-    .hamburger{
-        display:none;
+    .hamburger {
+        display: none;
     }
 }

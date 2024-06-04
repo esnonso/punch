@@ -1,30 +1,52 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .first-container {
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    transform:skewY(1.5deg);
-    margin:5rem 0;
+    -webkit-transform: skewY(1.5deg);
+    -ms-transform: skewY(1.5deg);
+    transform: skewY(1.5deg);
+    margin: 5rem 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
-.header-cont{
-    padding:3rem;
+.header-cont {
+    padding: 3rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.control-prev, .control-next{
-    height:3rem;
-    width:3rem;
-    border:none;
+.control-prev,
+.control-next {
+    height: 3rem;
+    width: 3rem;
+    border: none;
     border-radius: 20px;
     font-size: larger;
     color: #525AA0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    margin-right:1rem
+    margin-right: 1rem
 }
 
-.control-prev{
+.control-prev {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
@@ -38,23 +60,30 @@
     background-image: url("../../assets/pin-purple-next.png");
 }
 
-.desc-cont{
+.desc-cont {
     padding: 3rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 @media screen and (min-width:1000px) {
-    .first-container{
+    .first-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         margin: 7rem 0 0 0;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
-    .header-cont, .desc-cont{
-        width:35%;
+    .header-cont,
+    .desc-cont {
+        width: 35%;
     }
 
-    .desc-cont{
+    .desc-cont {
         padding: 5rem 5rem 0 0;
     }
 

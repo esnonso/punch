@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .backdrop {
     background-color: black;
     z-index: 3;
@@ -7,7 +14,9 @@
     top: 0;
     opacity: 0.8;
     color: white;
+    -webkit-animation-name: examplesb;
     animation-name: examplesb;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
@@ -18,29 +27,47 @@
     position: fixed;
     width: 80%;
     top: 0;
-    left:20%;
+    left: 20%;
     color: white;
+    -webkit-animation-name: examples;
     animation-name: examples;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
-.sidebar a{
+.sidebar a {
     text-decoration: none;
     height: 4rem;
-    width:100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-bottom: 1px #525AA0 solid;
     color: #525AA0;
 }
 
-.sidebar div:nth-child(2){
-    border-top:1px #525AA0 solid;
+.sidebar div:nth-child(2) {
+    border-top: 1px #525AA0 solid;
 }
 
-.close:hover{
+.close:hover {
     cursor: pointer;
+}
+
+@-webkit-keyframes examples {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes examples {
@@ -50,6 +77,16 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes examples-b {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
     }
 }
 
@@ -63,9 +100,9 @@
     }
 }
 
-@media screen and (min-width:800px){
-    .sidebar{
-        width:60%;
+@media screen and (min-width:800px) {
+    .sidebar {
+        width: 60%;
         left: 40%;
     }
 }
